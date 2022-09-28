@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51176D2028E32EFA00B63BA9 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51176D1F28E32EFA00B63BA9 /* Date+Today.swift */; };
+		51630C5528E4A00D00512E1F /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51630C5428E4A00D00512E1F /* ReminderDoneButton.swift */; };
+		51630C5728E4A70800512E1F /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51630C5628E4A70800512E1F /* ReminderListViewController+Actions.swift */; };
+		5166602928E3374F004EBE4D /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5166602828E3374F004EBE4D /* ReminderListViewController+DataSource.swift */; };
+		5166602B28E33C0D004EBE4D /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5166602A28E33C0D004EBE4D /* UIColor+Today.swift */; };
 		51AC5CB628E0960C00E3CBE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC5CB528E0960C00E3CBE4 /* AppDelegate.swift */; };
 		51AC5CB828E0960C00E3CBE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC5CB728E0960C00E3CBE4 /* SceneDelegate.swift */; };
 		51AC5CBA28E0960C00E3CBE4 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC5CB928E0960C00E3CBE4 /* ReminderListViewController.swift */; };
@@ -18,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51176D1F28E32EFA00B63BA9 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		51630C5428E4A00D00512E1F /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
+		51630C5628E4A70800512E1F /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
+		5166602428E33630004EBE4D /* Date.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Date.playground; sourceTree = "<group>"; };
+		5166602828E3374F004EBE4D /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		5166602A28E33C0D004EBE4D /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
 		51AC5CB228E0960C00E3CBE4 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AC5CB528E0960C00E3CBE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51AC5CB728E0960C00E3CBE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5166602528E336D9004EBE4D /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51AC5CB928E0960C00E3CBE4 /* ReminderListViewController.swift */,
+				5166602828E3374F004EBE4D /* ReminderListViewController+DataSource.swift */,
+				51630C5428E4A00D00512E1F /* ReminderDoneButton.swift */,
+				51630C5628E4A70800512E1F /* ReminderListViewController+Actions.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
 		51AC5CA928E0960C00E3CBE4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +82,11 @@
 		51AC5CB428E0960C00E3CBE4 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				5166602428E33630004EBE4D /* Date.playground */,
 				51AC5CCF28E0A56F00E3CBE4 /* Models */,
 				51AC5CB528E0960C00E3CBE4 /* AppDelegate.swift */,
 				51AC5CB728E0960C00E3CBE4 /* SceneDelegate.swift */,
-				51AC5CB928E0960C00E3CBE4 /* ReminderListViewController.swift */,
+				5166602528E336D9004EBE4D /* ListViewController */,
 				51AC5CBB28E0960C00E3CBE4 /* Main.storyboard */,
 				51AC5CC128E0960F00E3CBE4 /* Assets.xcassets */,
 				51AC5CC328E0960F00E3CBE4 /* LaunchScreen.storyboard */,
@@ -77,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				51AC5CD028E0A58100E3CBE4 /* Reminder.swift */,
+				5166602A28E33C0D004EBE4D /* UIColor+Today.swift */,
+				51176D1F28E32EFA00B63BA9 /* Date+Today.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,9 +179,14 @@
 			files = (
 				51AC5CBA28E0960C00E3CBE4 /* ReminderListViewController.swift in Sources */,
 				51AC5CB628E0960C00E3CBE4 /* AppDelegate.swift in Sources */,
+				51630C5728E4A70800512E1F /* ReminderListViewController+Actions.swift in Sources */,
 				51AC5CB828E0960C00E3CBE4 /* SceneDelegate.swift in Sources */,
+				51630C5528E4A00D00512E1F /* ReminderDoneButton.swift in Sources */,
+				51176D2028E32EFA00B63BA9 /* Date+Today.swift in Sources */,
+				5166602928E3374F004EBE4D /* ReminderListViewController+DataSource.swift in Sources */,
 				51AC5CC028E0960C00E3CBE4 /* Today.xcdatamodeld in Sources */,
 				51AC5CD128E0A58100E3CBE4 /* Reminder.swift in Sources */,
+				5166602B28E33C0D004EBE4D /* UIColor+Today.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SVYSLR2KJN;
+				DEVELOPMENT_TEAM = 5CC8FFQ2MT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Today;
@@ -333,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SVYSLR2KJN;
+				DEVELOPMENT_TEAM = 5CC8FFQ2MT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Today;
